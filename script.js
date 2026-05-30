@@ -23,21 +23,22 @@ function getScramble(){
 function entertime(){
   const input=document.getElementById("time").value
   const li=document.createElement("li");
+  if(input=="")return;
   const num=parseFloat(input);
   times.push(num);
   updateChart();
-  if(input=="")return;
   li.textContent=input;
   list.appendChild(li);
   let sum=0;
   let best=times[0];
   for(let i=0;i<times.length;i++){
+    if (isNaN(times[i])) continue;
     sum+=times[i];
     if(times[i]<best)best=times[i];
     else best=best;
   }
   let avg=sum/times.length;
-  document.getElementById("time").value=" "; 
+  document.getElementById("time").value=""; 
   document.getElementById("time").focus();
 const scramble = getScramble();
   document.getElementById("scramble").textContent = scramble;              
@@ -50,6 +51,8 @@ function showScramble(){
 let chart;
 
 function updateChart(){
+  const canvas = document.getElementById("myChart").getContext("2d");
+  if (!canvas) return;
   const ctx = document.getElementById("myChart");
 
   if(chart){
