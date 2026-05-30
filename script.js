@@ -1,3 +1,4 @@
+console.log("JS start");
 let time=0;
 const list=document.querySelector(".list");
 const form=document.querySelector("form");
@@ -51,6 +52,7 @@ function showScramble(){
 let chart;
 
 function updateChart(){
+  console.log("chart");
   const canvas = document.getElementById("myChart").getContext("2d");
   if (!canvas) return;
   const ctx = document.getElementById("myChart");
