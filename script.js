@@ -1,3 +1,4 @@
+alert("JS 有載入");
 console.log("JS start");
 let time=0;
 const list=document.querySelector(".list");
