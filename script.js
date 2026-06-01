@@ -27,7 +27,7 @@ function entertime(){
   if(input=="")return;
   const num=parseFloat(input);
   times.push(num);
-  updateChart();
+  //updateChart();
   li.textContent=input;
   list.appendChild(li);
   let sum=0;
