@@ -1,4 +1,3 @@
-alert("JS 有載入");
 let time=0;
 const list=document.querySelector(".list");
 const form=document.querySelector("form");
