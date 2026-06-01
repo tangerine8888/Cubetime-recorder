@@ -20,7 +20,7 @@ function getScramble(){
     scramble += move + " ";
   }
   return scramble;
-
+}
 function entertime(){
   const input=document.getElementById("time").value
   const li=document.createElement("li");
