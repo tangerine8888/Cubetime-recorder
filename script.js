@@ -26,7 +26,7 @@ function entertime(){
   if(input=="")return;
   const num=parseFloat(input);
   times.push(num);
-  //updateChart();
+  updateChart();
   li.textContent=input;
   list.appendChild(li);
   let sum=0;
@@ -51,10 +51,9 @@ function showScramble(){
 let chart;
 
 function updateChart(){
-  console.log("chart");
   const canvas = document.getElementById("myChart").getContext("2d");
   if (!canvas) return;
-  const ctx = document.getElementById("myChart");
+  const ctx = document.getElementById("2d");
 
   if(chart){
     chart.destroy();
