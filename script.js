@@ -52,6 +52,7 @@ let chart;
 
 function updateChart(){
   alert("chart");
+  alert(typeof Chart);
   const canvas = document.getElementById("myChart");
   if (!canvas) return;
   const ctx = document.getElementById("2d");
