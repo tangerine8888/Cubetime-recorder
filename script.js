@@ -51,27 +51,8 @@ function showScramble(){
 let chart;
 
 function updateChart(){
-  alert(typeof Chart);
-  const canvas = document.getElementById("myChart");
-  if (!canvas) return;
-  const ctx = document.getElementById("2d");
-
-  if(chart){
-    chart.destroy();
-  }
-
-  chart = new Chart(ctx, {
-    type: "line",
-    data: {
-      labels: times.map((_, i) => i + 1),
-      datasets: [{
-        label: "solve time",
-        data: times,
-        borderColor: "blue",
-        fill: false
-      }]
-    }
-  });
+  alert("function runs");
+  
 }
 form.addEventListener("submit", function(e){
   e.preventDefault();
