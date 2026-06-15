@@ -51,7 +51,6 @@ function showScramble(){
 let chart;
 
 function updateChart(){
-  alert("chart");
   alert(typeof Chart);
   const canvas = document.getElementById("myChart");
   if (!canvas) return;
