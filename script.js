@@ -56,7 +56,7 @@ function updateChart(){
   const canvas = document.getElementById("myChart");
   alert("2")
   if (!canvas) return;
-  const ctx = document.getElementById("2d");
+  const ctx = canvas.getContext("2d");
   alert("3")
   if(chart){
     chart.destroy();
