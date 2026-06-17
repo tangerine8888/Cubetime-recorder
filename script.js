@@ -52,12 +52,9 @@ function showScramble(){
 let chart;
 
 function updateChart(){
-  alert("1")
   const canvas = document.getElementById("myChart");
-  alert("2")
   if (!canvas) return;
   const ctx = canvas.getContext("2d");
-  alert("3")
   if(chart){
     chart.destroy();
   }
@@ -74,7 +71,6 @@ function updateChart(){
       }]
     }
   });
-  alert("4")
 }
 form.addEventListener("submit", function(e){
   e.preventDefault();
